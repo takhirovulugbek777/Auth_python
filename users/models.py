@@ -30,7 +30,6 @@ class User(AbstractUser, BaseModel):
         (DONE, DONE),
         (PHOTO_DONE, PHOTO_DONE)
     )
-
     user_roles = models.CharField(max_length=31, choices=USER_ROLES, default=ORDINARY_USER)
     auth_type = models.CharField(max_length=31, choices=AUTH_TYPE_CHOICES)
     auth_status = models.CharField(max_length=31, choices=AUTH_STATUS, default=NEW)
