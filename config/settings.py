@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     # apps
     'users',
     'shared',
+    'post',
 
 ]
 
